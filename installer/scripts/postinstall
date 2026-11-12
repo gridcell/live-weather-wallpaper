@@ -1,0 +1,8 @@
+#!/bin/bash
+# Restart the app as the logged-in user once the new copy is in place.
+pkill -x WeatherWallpaper || true
+user=$(stat -f%Su /dev/console)
+if [ -n "$user" ] && [ "$user" != "root" ]; then
+    launchctl asuser "$(id -u "$user")" sudo -u "$user" open "/Applications/Weather Wallpaper.app" || true
+fi
+exit 0

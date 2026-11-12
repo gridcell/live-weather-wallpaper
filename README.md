@@ -4,6 +4,14 @@ Weather Wallpaper draws the current local weather over your macOS desktop wallpa
 
 The app runs in the menu bar. It finds your location, gets the current conditions from [Open-Meteo](https://open-meteo.com), and updates every 15 minutes.
 
+## Screenshots
+
+The effects are animated. These screenshots show three of them over a dark wallpaper.
+
+| Rain | Snow | Fog |
+|---|---|---|
+| ![Rain streaks falling over a desktop wallpaper](images/rain.png) | ![Snowflakes drifting over a desktop wallpaper](images/snow.png) | ![Fog drifting across the corners of a desktop wallpaper](images/fog.png) |
+
 ## Install
 
 You need macOS 13 or later. The release packages are built for Apple silicon. On an Intel Mac, [build from source](#build-from-source).
